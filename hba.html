@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hosur Badminton Academy</title>
+    <style>
+        /* Common Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 2px;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Logo Name */
+        .logo-name {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            font-size: 20px;
+        }
+
+        /* Image */
+        .image {
+            margin-top: 75px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image video {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Moving Text */
+        .moving-text {
+           text-align: center;
+           margin-top: 10px;
+           font-size: 18px;
+           background-color: rgb(0, 154, 192);
+           padding: 15px;
+           color: #fff;
+        }
+
+        /* Centered Text */
+        .centered-text {
+            text-align: center;
+            margin-top: 14px;
+            font-size: 18px;
+        }
+
+        /* Video */
+        .video {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .video video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Carousel */
+        .carousel {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .carousel .box {
+            width: 400px;
+            height: 600px;
+            margin: 0 1px;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .carousel .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel .box p {
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        /* Animation Keyframes */
+        @keyframes zoomInOut {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .logo {
+                top: 5px;
+                left: 5px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .logo-name {
+                top: 5px;
+                right: 5px;
+                font-size: 16px;
+            }
+
+            .image {
+                margin-top: 50px;
+            }
+
+            .centered-text {
+                font-size: 16px;
+            }
+
+            .box {
+                width: 150px;
+            }
+
+            .carousel .box {
+                width: 150px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"2e1937e6806cd9d6f1ca7b7619b461a5a","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+    <header>
+        <img class="logo" src="logo.jpg" alt="Logo">
+        <h1 class="logo-name">Hosur Badminton Academy</h1>
+    </header>
+
+    <div class="container">
+        <div class="image">
+            <video src="video.mp4" autoplay muted></video>
+        </div>
+
+        <div class="moving-text">
+            <marquee behavior="scroll" direction="left" scrollamount="3"><b>Kids Juniour Open Tournament In Our Academy at 09-07-2023</b></marquee>
+        </div>
+
+        <div class="centered-text">
+            <h1><b>Hosur Badminton Academy</b></h1>
+            <p>At the Hosur Badminton Academy, we offer top-notch coaching and memberships for all badminton enthusiasts. Our experienced coaches provide comprehensive training programs tailored to various skill levels, from beginners to advanced players.<br> you're looking to improve your technique, enhance your fitness, or compete at a higher level, our academy is the perfect place for you. We focus on developing strong fundamentals, strategic gameplay, and mental agility to help you reach your full potential on the court.</br>
+                Join us at the Hosur Badminton Academy and experience the thrill of badminton while receiving expert guidance and enjoying the benefits of a vibrant and supportive community. Unleash your skills, make lifelong friendships, and elevate your game to new heights with us.</p>
+        </div>
+
+        <div class="video">
+            <video src="HBA AD.mp4" controls></video>
+        </div>
+
+        <div class="carousel">
+            <div class="box">
+                <img src="image 5.jpg" alt="Box 1">
+                <p>Mirdula</p>
+            </div>
+            <div class="box">
+                <img src="image 6.jpg" alt="Box 2">
+                <p>Yamini</p>
+            </div>
+            <div class="box">
+                <img src="image 7.jpg" alt="Box 3">
+                <p>Jagath & Illamaran</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Thank You For Visiting HBA Website.
+    </footer>
+
+    <script>
+        // Adjust the sliding speed
+        var speed = 3000; // in milliseconds
+
+        // Sliding Box Animation
+        var slidingBox = document.querySelector('.sliding-box');
+        var boxWidth = document.querySelector('.box').offsetWidth;
+        var numBoxes = document.querySelectorAll('.box').length;
+
+        slidingBox.style.width = (boxWidth + 10) * numBoxes + 'px';
+        slidingBox.style.animationDuration = (speed / 1000) * numBoxes + 's';
+    </script>
+</body>
+</html>
